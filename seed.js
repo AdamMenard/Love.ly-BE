@@ -49,12 +49,33 @@ var UsersList = [{
                  }];
 
 
-var ValuesList =
-  [{name:"humour",priority:1,score:10},
-  {name:"intelligence",priority:2,score:15},
-  {name:"materialism",priority:3,score:25},
-  {name:"empathy",priority:4,score:15},
-  {name:"physical_needs",priority:5,score:15}];
+var ValuesList = [
+                    { 
+                      name: "humour",
+                      priority: 1,
+                      score: 10
+                    },
+                    { 
+                      name: "intelligence",
+                      priority: 2,
+                      score: 15
+                    },
+                    { 
+                      name: "materialism",
+                      priority: 3,
+                      score: 25
+                    },
+                    { 
+                      name: "empathy",
+                      priority: 4,
+                      score: 15
+                    },
+                    { 
+                      name: "physical_needs",
+                      priority: 5,
+                      score: 15
+                    }
+                  ];
 
 
 UsersList.forEach(function(user) {

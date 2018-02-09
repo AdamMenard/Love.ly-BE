@@ -1,3 +1,11 @@
+// add .gitignore – do not ever commit node_modules
+
+
+
+
+
+
+
 /****************
  * REQUIREMENTS *
  ****************/
@@ -5,8 +13,6 @@ var express = require('express');
 var app = express();
 var router = require('./config/routes.js');
 
-// parse incoming urlencoded form data
-// and populate the req.body object
 var bodyParser = require('body-parser');
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -17,11 +23,12 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Serve static files from the `/public` directory:
-// i.e. `/images`, `/scripts`, `/styles`
+// Serve static files from the `/public` directory
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
+// localhost:8080/images/puppy.jpg
+// <img src="/images/puppy.jpg" />
 
 
 /************

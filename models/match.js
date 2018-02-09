@@ -2,11 +2,13 @@ var mongoose = require('mongoose'),
   Schema = mongoose.Schema,
   User = require('./user');
 
+// formatting
+
 var MatchSchema = new Schema({
   user_id: {
-              type: Schema.Types.ObjectId,  //foreign key for user
-              ref: 'User'
-           },
+    type: Schema.Types.ObjectId,  //foreign key for user
+    ref: 'User'
+  },
   favourite: Boolean
 });
 
