@@ -91,9 +91,8 @@ function find_match(savedUser){
              while(i < savedUser.values.length && j < users[match_idx].values.length){ // loop for values array of savedUser and one of the possible matches
                if(savedUser.values[i].name===users[match_idx].values[j].name){
                  if(savedUser.values[i].priority===users[match_idx].values[j].priority){
-                   if((savedUser.values[i].score===users[match_idx].values[j].score) ||
-                      (savedUser.values[i].score===users[match_idx].values[j].score+5) ||
-                      (savedUser.values[i].score===users[match_idx].values[j].score-5)
+                   if((savedUser.values[i].score<=users[match_idx].values[j].score+5) &&
+                      (savedUser.values[i].score>=users[match_idx].values[j].score-5)
                      ){
                         category_match_cnt +=1;
                       }
