@@ -111,41 +111,11 @@ function find_match(savedUser, res){
    });
  }
 
- // // POST user values
- // function add_user_values(req, res) {
- // 	Values.create(req.body, function(err, value){
- //     if (err) res.end(err);
- //     else {
- //       User.findById(req.params.user_id, function(err, user) {
- //         if (err) res.send(err);
- //         else {
- //           user.values.push(value);
- //           user.save();
- //           console.log("before match called");
- //           find_match(user);
- //           console.log("after match called");
- //           res.json(user);
- //         }
- //       })
- //     }
- //   });
- // }
-
- // // PUT (edit) a user's values
- // function update_user_values(req, res) {
- // 	Values.findByIdAndUpdate(req.params.values_id,
- //     {$set: req.body}, function(err, value){
- // 	    if (err) res.send(err);
- // 	    else res.json(value);
- //   	});
- // }
-
 module.exports = {
   index_users: index_users,
   create_user: create_user,
   show_user: show_user,
   update_user: update_user,
   delete_user: delete_user
-  // add_user_values: add_user_values,
-  // update_user_values: update_user_values
+
 };
