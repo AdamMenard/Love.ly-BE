@@ -46,6 +46,7 @@ function delete_user(req, res) {
 }
 
 function getMatchCount(savedUser,eachuserInDb){
+  console.log("getMatchCount called");
   let i=0;//looping variable for savedUser.values
   let j=0;//looping variable for other users.values
   let categ_match_cnt=0;
@@ -53,13 +54,16 @@ function getMatchCount(savedUser,eachuserInDb){
    if(savedUser.values[i].name===eachuserInDb.values[j].name){
      if(savedUser.values[i].priority===eachuserInDb.values[j].priority){
        if((savedUser.values[i].score > eachuserInDb.values[j].score-5 && savedUser.values[i].score < eachuserInDb.values[j].score+5)){
-             categ_match_cnt +=1;
+          console.log("current user score",savedUser.values[i].score);
+          console.log("existing user score",eachuserInDb.values[j].score);
+          categ_match_cnt +=1;
           }
      }
    }
    j++;
    i++;
  }
+  console.log("category_match_cnt",categ_match_cnt);
  return categ_match_cnt;
 }
 
@@ -78,6 +82,7 @@ function addSelfToMatchesRecord(savedUser,users){
 
 function find_match(savedUser, res){
      //get all users from db except the current user who has taken test.
+     console.log("find match called");
      User.find({'_id': {$ne: new ObjectID(savedUser._id)}}, function(err, users) {
        if (err) {
          res.send(err);
@@ -96,6 +101,7 @@ function find_match(savedUser, res){
                  res.send(err);
                }
                else{
+                console.log("matches",saved);
                  res.json(saved);
                }
              });

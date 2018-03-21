@@ -8,7 +8,7 @@ var UsersList = [{
                     age: 29,
                     gender: "M",
                     image_url: "https://profile.actionsprout.com/default.jpeg",
-                    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+                    description: "Adventurous and intuitive",
                     location: "225 Bush Street,SFO"
 
                  },
@@ -16,35 +16,35 @@ var UsersList = [{
                     age: 26,
                     gender: "M",
                     image_url: "https://profile.actionsprout.com/default.jpeg",
-                    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+                    description: "Generous and adventurous",
                     location: "225 Bush Street,SFO"
                  },
                  {  name: "Jessica",
                     age: 26,
                     gender: "F",
-                    image_url: "https://profile.actionsprout.com/default.jpeg",
-                    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+                    image_url: "https://docs.moodle.org/26/en/images_en/7/7c/F1.png",
+                    description: "Highly adaptable and affectionate",
                     location: "225 Bush Street,SFO"
                  },
                  {  name: "Amy",
                     age: 24,
                     gender: "F",
-                    image_url: "https://profile.actionsprout.com/default.jpeg",
-                    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+                    image_url: "https://docs.moodle.org/26/en/images_en/7/7c/F1.png",
+                    description: "Ambitious and adventurous",
                     location: "225 Bush Street,SFO"
                  },
                  {  name: "Chuck",
                     age: 27,
                     gender: "M",
-                    image_url: "https://profile.actionsprout.com/default.jpeg",
-                    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+                    image_url: "https://docs.moodle.org/26/en/images_en/7/7c/F1.png",
+                    description: "Cool and compassionate",
                     location: "225 Bush Street,SFO"
                  },
                  {  name: "Angelina",
                     age: 22,
                     gender: "F",
-                    image_url: "https://profile.actionsprout.com/default.jpeg",
-                    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+                    image_url: "https://docs.moodle.org/26/en/images_en/7/7c/F1.png",
+                    description: "Kind and courageous",
                     location: "225 Bush Street,SFO",
                  }];
 
